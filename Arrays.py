@@ -17,6 +17,9 @@ print(len(numbers))
 numbers.append(2)
 numbers.append(200)
 print(numbers)
+
 num2 = []
 num2.extend([4, 5, 6])
 print(num2)
+
+
