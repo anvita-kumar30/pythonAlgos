@@ -10,6 +10,9 @@ for n in new_list:
         print(True)
         break
 
+for i in range(len(new_list)):
+    print(new_list[i])
+
 numbers = []
 
 print(len(numbers))
@@ -22,4 +25,16 @@ num2 = []
 num2.extend([4, 5, 6])
 print(num2)
 
+num2.insert(2, 11)
+print(num2)
 
+num2.remove(11)
+print(num2)
+
+print(num2.index(5))
+
+if 5 in num2: print(True)
+if 30 not in numbers: print(True)
+
+num2[0] = 22 # Updates first element in list to 22
+print(num2)
