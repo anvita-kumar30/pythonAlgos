@@ -93,6 +93,7 @@ class SinglyLinkedList:
         if index == 0:
             self.add(data)
             return
+
         if index > 0:
             new = Node(data)
             position = index
@@ -222,3 +223,4 @@ l.add(11)
 l.add(12)
 print(l.size())
 print(l)
+print(l.search(10))
