@@ -7,7 +7,7 @@ def merge_sort(list):
     Conquer: Recursively sort the sublists created in previous step
     Combine: Merge the sorted sublists created in previous step
 
-    Takes O(nlog(n)) time
+    Takes O(n log n) time
     Takes O(n) space
     """
     if len(list) <= 1:
@@ -37,6 +37,7 @@ def merge(left, right):
     """
     Merges two linked lists, sorting by data in nodes
     Returns a new merged list
+
     Takes O(n) space
     Runs in O(n) time
     """
