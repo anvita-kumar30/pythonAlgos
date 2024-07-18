@@ -117,14 +117,14 @@ class SinglyLinkedList:
         Takes O(n) time
         """
 
-        if index >= self.__count:
-            raise IndexError('index out of range')
+        # if index >= self.__count:
+        #     raise IndexError('index out of range')
 
         if index == 0:
             return self.head
-
-        current = self.head
-        position = 0
+        else:
+            current = self.head
+            position = 0
 
         while position < index:
             current = current.next_node
@@ -216,11 +216,11 @@ class SinglyLinkedList:
 
         return '-> '.join(nodes)
 
-l = SinglyLinkedList()
-n1 = Node(10)
-l.head = n1
-l.add(11)
-l.add(12)
-print(l.size())
-print(l)
-print(l.search(10))
+# l = SinglyLinkedList()
+# n1 = Node(10)
+# l.head = n1
+# l.add(11)
+# l.add(12)
+# print(l.size())
+# print(l)
+# print(l.search(10))
