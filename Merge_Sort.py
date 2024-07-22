@@ -30,6 +30,7 @@ def merge_sort(values):
   # We'll also use slice syntax to get the right half of the list,
   # and pass that to merge_sort as well.
   right_values = merge_sort(values[middle_index:])
+  # print("%15s %-15s" % (left_values, right_values))
   # Now we need to merge the two halves together, and sort them as we
   # do it.  We'll create a list to hold the sorted values.
   sorted_values = []
@@ -78,4 +79,5 @@ def merge_sort(values):
 # Finally, we need to kick the whole process off. We'll call the
 # merge_sort function with the list of numbers we loaded, and print
 # the result.
+# print(numbers)
 print(merge_sort(numbers))
