@@ -7,3 +7,7 @@ def load_numbers(file_name):
     for line in f:
       numbers.append(int(line))
   return numbers
+
+file_name = '5.txt'
+numbers = load_numbers(file_name)
+# print(numbers)

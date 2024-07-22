@@ -40,6 +40,7 @@ def is_sorted(values):
 # so-called sorting.  The bogo_sort function will also take the list
 # of values it's working with as a parameter.
 def bogo_sort(values):
+  attempts = 0
   # We'll call our is_sorted function to test whether the list is
   # sorted. We'll keep looping until is_sorted returns True.
   while not is_sorted(values):
@@ -48,7 +49,9 @@ def bogo_sort(values):
     # that function here. And since this is inside the loop, it will
     # be randomized over and over until our is_sorted function
     # returns True.
+    print(attempts)
     random.shuffle(values)
+    attempts += 1
   # If the loop exits, it means is_sorted returned True, and the list
   # is sorted.  So we can now return the sorted list.
   return values
