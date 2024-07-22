@@ -8,6 +8,13 @@ def load_numbers(file_name):
       numbers.append(int(line))
   return numbers
 
-file_name = '5.txt'
-numbers = load_numbers(file_name)
+def load_strings(file_name):
+  strings = []
+  with open(file_name) as f:
+    for line in f:
+      strings.append(line.rstrip())
+  return strings
+
+# file_name = '5.txt'
+# numbers = load_numbers(file_name)
 # print(numbers)
